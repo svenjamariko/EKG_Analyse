@@ -1,9 +1,7 @@
 import json
 
 # Opening JSON file
-file = open("data/person_db.json")
-
-# Loading the JSON File in a dictionary
-person_data = json.load(file)
-
-person_data
+def load_person_data():
+    file = open("data/person_db.json")
+    person_data = json.load(file)
+    return person_data
