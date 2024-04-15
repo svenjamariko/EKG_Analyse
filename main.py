@@ -12,4 +12,9 @@ st.write("## Versuchsperson auswählen")
 current_user = st.selectbox(
     'Versuchsperson',
     options = ["Nutzer1", "Nutzer2"], key="sbVersuchsperson")
+
+# Session State wird leer angelegt, solange er noch nicht existiert
+if 'current_user' not in st.session_state:
+    st.session_state.current_user = 'None'
+st.write("Der Name ist: ", st.session_state.current_user) 
  
