@@ -11,4 +11,4 @@ st.write("## Versuchsperson auswählen")
 # Eine Auswahlbox
 current_user = st.selectbox(
     'Versuchsperson',
-    options = ["Nutzer1", "Nutzer2"], key="sbVersuchsperson")
+    options = ["Name", "..."], key="sbName")
